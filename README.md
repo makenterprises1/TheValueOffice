@@ -2,8 +2,11 @@
 
 Next.js 14 + TypeScript + Tailwind. Static export: deploys to GitHub Pages (free prototype) or Vercel.
 
+## Languages
+English at `/`, French at `/fr/`. All copy lives in `lib/content.ts` (one object per language). Screenshots and links: `lib/config.ts`.
+
 ## Edit before launch
-`lib/config.ts`: set `[APPLICATION_URL]`, `[LINKEDIN_URL]`, `[EMAIL]`, `[COHORT_DATE]` (or use env vars `NEXT_PUBLIC_APPLICATION_URL`, `NEXT_PUBLIC_LINKEDIN_URL`, `NEXT_PUBLIC_EMAIL`, `NEXT_PUBLIC_COHORT_DATE`, `NEXT_PUBLIC_SITE_URL`). Verify every founder metric. Price and guarantee are intentionally absent.
+Application form, email and LinkedIn URL are set in `lib/config.ts` (override with `NEXT_PUBLIC_*` env vars). Still to fill: `[COHORT_DATE]`. Hide any screenshot by removing it from `INBOUND` / `NETWORK`. Price and guarantee are intentionally absent.
 
 ## Run locally
 ```bash
